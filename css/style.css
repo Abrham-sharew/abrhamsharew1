@@ -3,7 +3,7 @@
 /* global css */
 :root
 {
-    --main-color:hsla(239, 100%, 51%, 0.884);
+    --main-color:#356BB3;;
     --shadow-black-100:0 5px 15px rgba(0,0,0,0.1);
     --shadow-black-300:0 5px 15px rgba(0,0,0,0.3);
     --black-900:#000;
@@ -127,14 +127,14 @@ a,a:hover
 /* navbar */
 .navbar
 {
-    background-color: var(--white);
-    padding: 30px 0;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.08);
+    background-color: #356BB3;
+    padding: 3px 0;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.08);
     transition: all 0.5s ease;
 }
 .navbar.navbar-shrink
 {
-    padding: 20px 0;
+    padding: 12px 0;
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
 }
 .navbar > .container
@@ -144,7 +144,7 @@ a,a:hover
 .navbar .navbar-brand
 {
     font-size: 30px;
-    color: var(--main-color);
+    color: var(--white);
     font-weight: 500;
     text-transform: capitalize;
 }
@@ -156,7 +156,7 @@ a,a:hover
 {
     color: var(--black-400);
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     padding: 5px 0;
     position: relative;
@@ -167,7 +167,7 @@ a,a:hover
     content: '';
     width: 3px;
     height: 0;
-    background-color: var(--main-color);
+    background-color: var(--white);
     left: 50%;
     top: -45px;
     transform: translateX(-50%);
@@ -176,7 +176,7 @@ a,a:hover
 .navbar .nav-item .nav-link.active,
 .navbar .nav-item .nav-link:hover
 {
-    color: var(--main-color);
+    color: var(--white);
 }
 .navbar .nav-item .nav-link.active::before,
 .navbar .nav-item .nav-link:hover::before
@@ -186,8 +186,8 @@ a,a:hover
 /* home section */
 .header-content
 {
-    background-color: #f7f7f7;
-    height: 800px;
+    background-color: #06D6A0;
+    height: 700px;
     padding-top: 80px;
     position: relative;
     overflow: hidden;
@@ -267,18 +267,32 @@ a,a:hover
     font-size: 30px;
     font-weight: 600;
     padding-bottom: 8px;
-    color: var(--main-color);
+    color: var(--black-900);
 }
-.home-text h1
+.nike{
+    color: #080707;
+     font-size: 60px;
+
+}
+.nike2{
+    color: #f7f7f7;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.nike3{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home-text h2
 {
     font-size: 60px;
     font-weight: 600;
     padding-bottom: 8px;
-    color: var(--black-900);
+    color: var(--white);
 }
 .home-text p
 {
-    font-size: 20px;
+    font-size: 35px;
     line-height: 28px;
     color: var(--black-400);
     font-weight: 400;
@@ -291,6 +305,7 @@ a,a:hover
     margin: 0 auto;
     position: relative;
 }
+/*
 .home-img::before
 {
     position: absolute;
@@ -314,6 +329,7 @@ a,a:hover
     left: 0;
     z-index: 12;
 }
+*/
 .home-img img
 {
     position: relative;
@@ -323,7 +339,7 @@ a,a:hover
 .header-social
 {
     position: absolute;
-    bottom: 30px;
+    bottom: 85px;
     left: 15px;
     width: 100%;
 }
@@ -336,16 +352,16 @@ a,a:hover
     position: absolute;
     content: '';
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: var(--main-color);
     left: -102.5%;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
 }
 .header-social .header-social-icon ul li
 {
     display: inline-block;
-    margin-left: 13px;
+    margin-left: 16px;
 }
 .header-social .header-social-icon ul li:first-child
 {
@@ -353,14 +369,14 @@ a,a:hover
 }
 .header-social .header-social-icon ul li a
 {
-    color: #ccc;
-    font-size: 20px;
+    color: #000000;
+    font-size: 25px;
     width: 40px;
     height: 40px;
     display: inline-block;
     line-height: 40px;
     border-radius: 50%;
-    border: 1px solid #ccc;
+    border: 1px solid #2b537e;
     text-align: center;
     transition: all 0.3s ease-out 0s;
 }
@@ -590,7 +606,7 @@ a,a:hover
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(172,49,165,0.8);
+    background-color: rgba(8, 7, 8,0.8);
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease-out;
@@ -791,7 +807,7 @@ a,a:hover
     font-size: 16px;
     color: rgb(255, 157, 0);
 }
-/* pricing plan */
+/* pricing plan 
 .pricing-plan
 {
     box-shadow: var(--shadow-black-100);
@@ -871,6 +887,8 @@ a,a:hover
     padding: 20px 30px 30px;
     text-align: center;
 }
+
+*/
 /* faq */
 .faq .accordion-item:not(:last-child)
 {
